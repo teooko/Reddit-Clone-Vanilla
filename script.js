@@ -1,5 +1,5 @@
 const article = document.getElementsByTagName('article')[0];
-const loading = document.getElementsByClassName('loading')[0];
+const loading = document.getElementById('loading');
 const footer = document.getElementById('footer');
 
 const date = new Date(2020, 4, 25, 0, 0, 0, 0);
@@ -65,11 +65,11 @@ const createCard = () => {
         new_post = `<div class="card" id="postCard">
                 <div class="upvoteBar">
                   <div class="upvotes">
-                    <button class="upvoteButton">
+                    <button class="voteButton" id="upvoteButton">
                       <i class="fa-solid fa-up-long" id="arrowUp"></i>
                     </button>
                     ${postResponse.data[i].likes}
-                  <button class="downvoteButton">
+                  <button class="voteButton" id="downvoteButton">
                     <i class="fa-solid fa-down-long" id="arrowDown"></i>
                   </button>
                     

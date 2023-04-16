@@ -12,13 +12,14 @@
     ></script>
     <script src="config.js" defer></script>
     <script src="script.js" defer></script>
-
     <title>Reddit</title>
     <link rel="icon" href="assets/reddit-logo-icon.ico" />
   </head>
+
   <body>
     <header class="card">
-      <div class="redditLogo"></div>
+      <div id="redditLogo"></div>
+
       <div class="headerFeed">
         <i class="fa-solid fa-house"></i>
         <select class="dropDown" id="headerFeed">
@@ -27,6 +28,7 @@
           <option value="3">All</option>
         </select>
       </div>
+
       <div class="headerSearch">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" id="headerInput" placeholder="Search Reddit" />
@@ -34,18 +36,30 @@
 
       <div class="headerButtons">
         <button class="squareButton">
-          <i class="fa-solid fa-arrow-trend-up"></i>
+          <i class="fa-solid fa-arrow-trend-up headerIcon"></i>
         </button>
-        <button class="squareButton"><i class="fa-solid fa-coins"></i></button>
+
         <button class="squareButton">
-          <i class="fa-brands fa-rocketchat"></i>
+          <i class="fa-solid fa-coins headerIcon"></i>
         </button>
+
+        <button class="squareButton">
+          <i class="fa-brands fa-rocketchat headerIcon"></i>
+        </button>
+
         <span class="headerButtonDivider"></span>
+
         <button class="squareButton">
-          <i class="fa-regular fa-comment-dots"></i>
+          <i class="fa-regular fa-comment-dots headerIcon"></i>
         </button>
-        <button class="squareButton"><i class="fa-regular fa-bell"></i></button>
-        <button class="squareButton"><i class="fa-solid fa-plus"></i></button>
+
+        <button class="squareButton">
+          <i class="fa-regular fa-bell headerIcon"></i>
+        </button>
+
+        <button class="squareButton">
+          <i class="fa-solid fa-plus headerIcon"></i>
+        </button>
 
         <button class="headerAdvertiseButton">
           <i class="fa-solid fa-bullhorn"></i>
@@ -59,32 +73,43 @@
         <option value="3">User Settings</option>
       </select>
     </header>
+
     <article>
       <div class="card" id="createPost">
         <div class="userPicture"></div>
+
         <input type="text" class="createPost" placeholder="Create Post" />
+
         <button class="squareButton">
-          <i class="fa-regular fa-image"></i>
+          <i class="fa-regular fa-image createIcon"></i>
         </button>
-        <button class="squareButton"><i class="fa-solid fa-link"></i></button>
+
+        <button class="squareButton">
+          <i class="fa-solid fa-link createIcon"></i>
+        </button>
       </div>
+
       <div class="card" id="order">
         <button class="feedButton">
           <i class="fa-solid fa-rocket" id="icon"></i>
           Best
         </button>
+
         <button class="feedButton">
           <i class="fa-solid fa-fire-flame-simple" id="icon"></i>
           Hot
         </button>
+
         <button class="feedButton">
           <i class="fa-solid fa-bahai" id="icon"></i>
           New
         </button>
+
         <button class="feedButton">
           <i class="fa-solid fa-ranking-star" id="icon"></i>
           Top
         </button>
+
         <button class="feedButton">
           <i class="fa-solid fa-ellipsis"></i>
         </button>
@@ -94,14 +119,17 @@
           <i class="fa-solid fa-angle-down"></i>
         </button>
       </div>
-      <div class="loading">
+
+      <div id="loading">
         <i class="fa-solid fa-spinner"></i>
       </div>
     </article>
+
     <aside>
       <div class="card" id="premium">
         <div class="premium">
           <i class="fa-solid fa-shield-halved"></i>
+
           <div class="premiumText">
             <div class="premiumTitle">Reddit Premium</div>
             <div class="premiumDescription">
@@ -109,29 +137,35 @@
             </div>
           </div>
         </div>
+
         <button class="premiumTryButton">Try Now</button>
       </div>
+
       <div class="card" id="home">
         <div class="homeBanner"></div>
+
         <div class="home">
           <div class="homeHeader">
             <div class="homeSnoo"></div>
             <div class="homeTitle">Home</div>
           </div>
+
           <div class="homeDescription">
             Your personal Reddit frontpage. Come here to check in with your
             favorite communities.
           </div>
 
           <hr class="homeDivider" />
+
           <div class="homeButtons">
             <button class="homePostButton">Create Post</button>
             <button class="homeCommunityButton">Create Community</button>
           </div>
         </div>
       </div>
+
       <div class="card" id="footer">
-        <table class="policies">
+        <table>
           <tbody>
             <tr>
               <td>User Agreement</td>
@@ -143,8 +177,10 @@
             </tr>
           </tbody>
         </table>
-        <hr class="languagesDivider" />
-        <table class="languages">
+
+        <hr class="footerDivider" />
+
+        <table>
           <tbody>
             <tr>
               <td>English</td>
@@ -160,11 +196,12 @@
             </tr>
           </tbody>
         </table>
-        <hr class="copyrightDivider" />
-        <div class="copyrightText">
-          Reddit Inc &copy; 2023. All rights reserved
-        </div>
+
+        <hr class="footerDivider" />
+
+        <div class="copyright">Reddit Inc &copy; 2023. All rights reserved</div>
       </div>
+
       <button onclick="goToTop()" class="homePostButton" id="backToTop">
         Back to Top
       </button>

@@ -1,7 +1,8 @@
 const article = document.getElementsByTagName('article')[0];
 const loading = document.getElementById('loading');
 const footer = document.getElementById('footer');
-
+const dropDown = document.getElementsByClassName('dropDown')[0];
+const headerMenuOpen = document.getElementsByClassName('headerMenuOpen')[0];
 const date = new Date(2020, 4, 25, 0, 0, 0, 0);
 
 let dataLoading = false;
@@ -169,3 +170,12 @@ window.addEventListener('scroll', handleSticky);
 window.onload = () => {
   createCard();
 };
+
+const checkFocus = () => {
+  if (document.activeElement === dropDown) {
+    headerMenuOpen.classList.add('show');
+  } else {
+    headerMenuOpen.classList.remove('show');
+  }
+};
+window.addEventListener('click', checkFocus);

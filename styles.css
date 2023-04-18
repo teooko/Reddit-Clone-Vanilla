@@ -295,11 +295,7 @@ td {
 .dropDown:hover {
   border: 1px solid #343536;
   border-radius: 4px;
-}
-
-.dropDown:focus {
-  border: 1px solid #343536;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 .fa-solid.fa-house {
@@ -317,10 +313,16 @@ td {
   border-bottom-right-radius: 4px;
   border-top: none;
 
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   position: fixed;
   left: 141px;
   top: 40px;
   display: none;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   height: 481px;
   width: 268px;
@@ -329,6 +331,7 @@ td {
 .headerMenuOpen.show {
   display: block;
 }
+
 .headerSearch {
   background-color: #272729;
 
@@ -345,6 +348,11 @@ td {
 }
 
 .headerSearch:hover {
+  background-color: #161617;
+  border-color: #d7dadc;
+}
+
+.headerSearch:focus-within {
   background-color: #161617;
   border-color: #d7dadc;
 }
@@ -373,6 +381,12 @@ td {
 }
 
 .headerIcon {
+  color: #d7dadc;
+  font-size: 20px;
+  margin: 6px;
+}
+
+#headerIcon {
   color: #d7dadc;
   font-size: 20px;
   margin: 6px;
@@ -458,6 +472,11 @@ td {
 }
 
 .createPost:hover {
+  background-color: #161617;
+  border-color: #d7dadc;
+}
+
+.createPost:focus {
   background-color: #161617;
   border-color: #d7dadc;
 }
@@ -752,4 +771,65 @@ td {
   border-radius: 4px;
 
   cursor: pointer;
+}
+
+.Filter {
+  background-color: #272729;
+  color: #d7dadc;
+
+  border: 1px solid #343536;
+
+  font-size: 14px;
+
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  width: 218px;
+  height: 29px;
+}
+
+.Filter:hover {
+  background-color: #161617;
+  border-color: #d7dadc;
+}
+
+.Filter:focus {
+  background-color: #161617;
+  border-color: #d7dadc;
+}
+
+.headerMenuTitle {
+  color: #676c72;
+
+  font-size: 10px;
+  text-transform: uppercase;
+
+  margin: 16px 24px 8px;
+}
+
+.headerMenuDefaultButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 14px;
+
+  padding: 2px 18px;
+}
+
+.headerMenuDefaultButton:hover {
+  background-color: #272729;
+  cursor: pointer;
+}
+
+.headerMenuUser {
+  background-image: url('assets/avatar-default.png');
+  background-size: 20px 20px;
+
+  margin: 6px;
+
+  width: 20px;
+  height: 20px;
 }

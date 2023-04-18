@@ -20,17 +20,71 @@
     <header class="card">
       <div id="redditLogo"></div>
 
-      <div class="headerMenuOpen">Hewo</div>
+      <div class="headerMenuOpen" tabindex="0">
+        <input type="text" class="Filter" placeholder="Filter" />
 
-      <div class="headerFeed">
-        <button class="dropDown">
-          <div class="dropDownSelected">
-            <i class="fa-solid fa-house"></i>Home
-          </div>
+        <div class="headerMenuTitle">your communities</div>
 
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-plus headerIcon"></i>Create Community
+        </div>
+
+        <div class="headerMenuTitle">following</div>
+
+        <div class="headerMenuTitle">feeds</div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-house headerIcon"></i>Home
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-arrow-trend-up headerIcon"></i>Popular
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-brands fa-rocketchat headerIcon"></i>All
+        </div>
+
+        <div class="headerMenuTitle">other</div>
+
+        <div class="headerMenuDefaultButton">
+          <div class="headerMenuUser"></div>
+          User Settings
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <div class="headerMenuUser"></div>
+          Messages
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-plus headerIcon"></i>Create Post
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-regular fa-bell headerIcon"></i>Notifications
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-coins headerIcon"></i>Coins
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-shield-halved" id="headerIcon"></i>Premium
+        </div>
+
+        <div class="headerMenuDefaultButton">
+          <i class="fa-solid fa-shirt headerIcon"></i>Avatar
+        </div>
       </div>
+
+      <button class="dropDown">
+        <div class="dropDownSelected">
+          <i class="fa-solid fa-house"></i>Home
+        </div>
+
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
 
       <div class="headerSearch">
         <i class="fa-solid fa-magnifying-glass"></i>

@@ -170,12 +170,23 @@ window.addEventListener('scroll', handleSticky);
 window.onload = () => {
   createCard();
 };
-
+let openmenu = 0;
 const checkFocus = () => {
   if (document.activeElement === dropDown) {
     headerMenuOpen.classList.add('show');
+    dropDown.style.border = '1px solid #343536';
+    dropDown.style.borderRadius = '4px';
+    if (openmenu === 1) {
+      openmenu = 0;
+      headerMenuOpen.classList.remove('show');
+      dropDown.style.border = 'solid 1px transparent';
+    } else openmenu = 1;
   } else {
-    headerMenuOpen.classList.remove('show');
+    if (!headerMenuOpen.contains(document.activeElement)) {
+      openmenu = 0;
+      headerMenuOpen.classList.remove('show');
+      dropDown.style.border = 'solid 1px transparent';
+    }
   }
 };
 window.addEventListener('click', checkFocus);

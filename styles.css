@@ -332,6 +332,33 @@ td {
   display: block;
 }
 
+.userMenuOpen {
+  background-color: #1a1a1b;
+  color: #d7dadc;
+
+  border: 1px solid #343536;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  position: fixed;
+  right: 13px;
+  top: 48px;
+  display: block;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  height: 610px;
+  width: 254px;
+}
+
+.userMenuOpen.show {
+  display: block;
+}
+
 .headerSearch {
   background-color: #272729;
 

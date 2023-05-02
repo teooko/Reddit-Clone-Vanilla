@@ -15,6 +15,12 @@ body {
   letter-spacing: 0.01rem;
 }
 
+#headerCard {
+  border-top:none;
+  border-left: none;
+  border-right: none;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -22,7 +28,7 @@ header {
   flex-grow: 1;
   gap: 25px;
 
-  padding: 3px 25px;
+  padding: 3px 20px;
 
   position: fixed;
 
@@ -261,6 +267,8 @@ td {
   background-image: url('assets/reddit-logo.png');
   background-size: 98px 32px;
 
+  margin-left: 6px;
+
   height: 32px;
   width: 98px;
 }
@@ -332,6 +340,59 @@ td {
   display: block;
 }
 
+.fa-solid.fa-fan {
+  color:#ff4500;
+}
+
+#userMenu {
+  font-weight: 500;
+
+  padding-left: 3px;
+  padding-right: 3px;
+
+  width: 208px;
+  height: 100%;
+}
+
+.userMenuDetails {
+  display: flex;
+  flex-direction: row;
+}
+
+.userMenuPicture {
+  background-image: url('assets/avatar-default.png');
+  background-size: 24px 24px;
+
+  border:#343536 solid 1px;
+  border-radius: 4px;
+
+  margin: 5px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.userMenuText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+
+  margin-bottom: 5px;
+
+  font-size: 12px;
+}
+
+.userMenuIcon {
+  color:#676c72;
+  margin-right: 7px;
+}
+
+.userMenuKarma {
+  color:#676c72;
+}
+
 .userMenuOpen {
   background-color: #1a1a1b;
   color: #d7dadc;
@@ -346,7 +407,7 @@ td {
   position: fixed;
   right: 13px;
   top: 48px;
-  display: block;
+  display: none;
 
   overflow-y: scroll;
   overflow-x: hidden;

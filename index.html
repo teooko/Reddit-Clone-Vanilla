@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header class="card">
+    <header class="card" id="headerCard">
       <div id="redditLogo"></div>
 
       <div class="headerMenuOpen" tabindex="0">
@@ -125,12 +125,22 @@
           Advertise
         </button>
       </div>
+      <button class="dropDown" id="userMenu">
+        <div class="userMenuDetails">
 
-      <select class="dropDown" id="headerUser">
-        <option value="1">username</option>
-        <option value="2">Create Avatar</option>
-        <option value="3">User Settings</option>
-      </select>
+          <div class="userMenuPicture"></div>
+
+          <div class="userMenuText">
+            username
+            <div class="userMenuKarma">
+              <i class="fa-solid fa-fan"></i>
+              1.3k karma
+            </div>
+          </div>
+        </div>
+
+          <i class="fa-solid fa-chevron-down userMenuIcon"></i>
+      </button>
     </header>
 
     <article>

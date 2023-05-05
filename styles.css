@@ -306,6 +306,12 @@ td {
   cursor: pointer;
 }
 
+.dropDown:focus-within {
+  border: 1px solid #343536;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .fa-solid.fa-house {
   color: #d7dadc;
   font-size: 20px;
@@ -401,12 +407,12 @@ td {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   position: fixed;
   right: 13px;
-  top: 48px;
+  top: 49px;
   display: none;
 
   overflow-y: scroll;
@@ -923,4 +929,76 @@ td {
 
   width: 20px;
   height: 20px;
+}
+
+.userMenuTitle {
+  color:#676c72;
+
+  font-size: 14px;
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 40px;
+}
+
+.userMenuIcon {
+  font-size: 20px;
+  width:24px;
+}
+
+.userMenuDefaultButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 14px;
+
+  padding-left: 51px;
+  padding-right: 20px;
+  color:#d0d3d5;
+
+  height: 40px;
+}
+
+.userMenuDefaultButton:hover {
+  background-color: #272729;
+  cursor: pointer;
+}
+
+.userMenuDivider {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color:#343536;
+  height: 1px;
+}
+
+.userMenuIconButton {
+  color:#d0d3d5;
+
+  font-size: 14px;
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 40px;
+
+}
+
+#userMenuButton {
+  color:#d0d3d5;
+}
+
+.userMenuCopyright {
+  color:#676c72;
+  font-size: 12px;
+  margin: 20px;
 }

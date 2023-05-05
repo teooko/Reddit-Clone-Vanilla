@@ -2,7 +2,9 @@ const article = document.getElementsByTagName('article')[0];
 const loading = document.getElementById('loading');
 const footer = document.getElementById('footer');
 const dropDown = document.getElementsByClassName('dropDown')[0];
+const dropDownUser = document.getElementsByClassName('dropDown')[1];
 const headerMenuOpen = document.getElementsByClassName('headerMenuOpen')[0];
+const userMenuOpen = document.getElementsByClassName('userMenuOpen')[0];
 const date = new Date(2020, 4, 25, 0, 0, 0, 0);
 
 let dataLoading = false;
@@ -190,3 +192,24 @@ const checkFocus = () => {
   }
 };
 window.addEventListener('click', checkFocus);
+
+let openusermenu = 0;
+const checkUserFocus = () => {
+  if (document.activeElement === dropDownUser) {
+    userMenuOpen.classList.add('show');
+    dropDownUser.style.border = '1px solid #343536';
+    dropDownUser.style.borderRadius = '4px';
+    if (openusermenu === 1) {
+      openusermenu = 0;
+      userMenuOpen.classList.remove('show');
+      dropDownUser.style.border = 'solid 1px transparent';
+    } else openusermenu = 1;
+  } else {
+    if (!userMenuOpen.contains(document.activeElement)) {
+      openusermenu = 0;
+      userMenuOpen.classList.remove('show');
+      dropDownUser.style.border = 'solid 1px transparent';
+    }
+  }
+};
+window.addEventListener('click', checkUserFocus);

@@ -9,3 +9,7 @@ The page uses a social media mock api called [dummyapi.io](https://dummyapi.io/)
 # Setting up
 
 The api key needs to be placed in a file named **config.js**, with the content `API_KEY = {your key}`. To start the project simply open index.html.
+
+# Project Screenshot
+
+![Screenshot](screenshot.png)
